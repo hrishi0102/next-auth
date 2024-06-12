@@ -15,6 +15,7 @@ const handler = NextAuth({
         password: { label: "Password", type: "password", placeholder: "123" },
       },
       async authorize(credentials: any) {
+        //do database checks/validation here
         return {
           id: "user1",
         };
